@@ -7,17 +7,14 @@ import (
 )
 
 func main(){
- var x string
+ var x,s string
  fmt.Printf("Enter a String :")
  fmt.Scan(&x)
- str1:="i"
- str3:="a"
- str5:="n"
+ s = strings.ToLower(x)
  var k,y,z bool
- k = strings.HasPrefix(x,str1)
- y = strings.Contains(x,str3)
-// s:= x[len(x)-1:]
- z = strings.HasSuffix(x,str5)
+ k = strings.HasPrefix(s,"i")
+ y = strings.Contains(s,"a")
+ z = strings.HasSuffix(s,"n")
  
  
 if (k && y && z)  {
